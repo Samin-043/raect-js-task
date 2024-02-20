@@ -1,8 +1,8 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -22,17 +22,448 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+} */
+
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.blackFriday {
+  color: #61c5fb;
+  font-family: monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: normal;
+  width: 100%;
+}
+
+.landingSection h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 10px 0px;
+  padding: 0px;
+}
+
+
+.categoryNavbar {
+  display: flex;
+  min-height: 40px;
+  background-color: #61dafb;
+}
+
+.categoryNavbar a {
+  color: #fff;
+  margin: auto 20px;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.categoryNavbar a:hover {
+  color: rgb(6, 11, 10);
+}
+
+.categoryNavbar button {
+  background-color: inherit;
+  margin: auto 0px;
+  border-style: hidden;
+}
+
+.categoryNavbar span {
+  font-size: 14px;
+  font-weight: 400;
+  margin: auto 10px;
+}
+
+.parentDiv {
+  display: flex;
+  flex-direction: row;
+}
+
+.toogleBar {
+  min-width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.toogleBar a {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin: 1px auto;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 0px;
+  text-decoration: none;
+  color: #61dafb;
+}
+
+.toogleBar a:hover {
+  cursor: pointer;
+  background-color: #61dafb;
+  color: #fff;
+}
+
+.toogleBar a:nth-child(2) {
+  background-color: #61dafb;
+  color: #fff;
+}
+
+
+.landingSection {
+  width: 80%;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.landingSection h6 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 10px 0px;
+  padding: 0px;
+}
+
+
+.landingSection p {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px 0px;
+  padding: 0px;
+}
+
+.landingSection button {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 10px 0px;
+  padding: 0px;
+  background-color: #61dafb;
+  color: #fff;
+  border-radius: 4px;
+  padding: 8px 16px;
+  border-style: hidden;
+}
+
+.landingSection button:hover {
+  cursor: pointer;
+  background-color: #39cbf3;
+}
+
+
+.landingSection .card1 {
+  margin: auto;
+}
+
+.landingSection .card2 {
+  margin: auto;
+}
+
+.landingImage img {
+  height: 350px;
+  width: 100%;
+}
+
+.displaySection {
+  display: flex;
+}
+
+.displaySection .card {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 25%;
+  margin: 5px;
+  border-radius: 4px;
+  padding: 14px 28px;
+  background-color: #61dafb85;
+}
+
+.displaySection p {
+  line-height: normal;
+  margin: 5px 0px;
+  padding: 0px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.displaySection h3 {
+  line-height: normal;
+  margin: 5px 0px;
+  padding: 0px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+@media (max-width:990px) {
+  .displaySection {
+    flex-direction: column;
+  }
+
+  .displaySection .card {
+    width: 50%;
+    margin: 10px auto;
+  }
+}
+
+
+@media (max-width:660px) {
+  .displaySection {
+    flex-direction: column;
+  }
+
+  .displaySection .card {
+    margin: 10px auto;
+    width: 80%;
+  }
+}
+
+
+
+.displaySection .card img {
+  height: 100px;
+  width: 100px;
+}
+
+
+.featureSection .divProduct{
+  padding: 10px;
+}
+
+.serviceSection {
+  width: 20%;
+}
+
+@media (max-width:600px) {
+  .serviceSection {
+    width: 100%;
+  }
+
+  .serviceSection .card{
+    margin: auto;
+  }
+}
+
+
+
+
+
+.serviceSection .card {
+  margin: 10px 0px;
+  text-align: center;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 4px 0px;
+}
+
+
+.serviceSection p {
+  line-height: normal;
+  margin: 5px 0px;
+  padding: 0px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.serviceSection h3 {
+  line-height: normal;
+  margin: 5px 0px;
+  padding: 0px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+.featureSection img {
+  width: 100%;
+  max-width: 250px;
+  height: 250px;
+}
+
+
+.featureSection .nestedDiv {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.featureSection .nestedDiv .rating {
+  color: rgb(255, 81, 0);
+}
+
+.featureSection .divImage {
+  background-color: rgba(225, 225, 225, 0.526);
+}
+
+
+.featureSection {
+  display: flex;
+}
+
+
+
+
+.featureSection .priceDiv p {
+  margin: 0px;
+  padding: 0px;
+  line-height: normal;
+}
+
+
+
+.featureSection .priceDiv {
+  display: flex;
+  width: min-content;
+}
+
+
+
+
+.featureSection .price {
+  color: #61dafb;
+  font-weight: 600;
+}
+
+
+.featureSection .priceDiv del {
+  margin: 0px 5px;
+}
+
+
+.featureSection p {
+  line-height: normal;
+  margin: 5px 0px;
+  padding: 0px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+
+.featureSection h3 {
+  line-height: normal;
+  margin: 5px 0px;
+  padding: 0px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.featureSection {
+  margin: 10px 0px;
+  width: 80%;
+}
+
+.titleSection h2 {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+
+
+
+
+.featureSection .card {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 25%;
+  margin: 5px;
+  border-radius: 4px;
+  background-color: #fff;
+  min-height: 300px;
+  padding-bottom: 10px;
+}
+
+
+
+
+@media (max-width:990px) {
+  .featureSection {
+    flex-direction: row;
+  }
+
+  .featureSection {
+    margin: auto;
+    width: 90%;
+  }
+
+  .featureSection .card {
+    width: 25%;
+  }
+}
+
+
+@media (max-width:660px) {
+  .featureSection {
+    flex-direction: column;
+  }
+
+  .featureSection {
+    margin: auto;
+    width: 90%;
+  }
+
+  .featureSection .card {
+    margin: 10px auto;
+    width: 100%;
+  }
+}
+
+
+.productSection {
+  display: flex;
+}
+
+.featureSection h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
+@media (max-width:768px) {
+  .productSection {
+    flex-direction: column-reverse;
+  }
+}
+
+
+
+
+@media (max-width:660px) {
+  .landingSection {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .toogleBar {
+    display: none;
+  }
+
+  .landingSection {
+    width: 100%;
   }
 }
